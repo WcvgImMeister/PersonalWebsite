@@ -1,0 +1,280 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-items: baseline;
+    
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    /* overflow-x:hidden; */
+    background: no-repeat center/80% url(images/space.jpg);
+    background-color: black;
+    background-size: cover;
+    animation: appear forwards 1s;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    text-align: left;
+    color: white;
+}
+
+@keyframes appear {
+    from{
+        filter: brightness(0);
+    }
+    to{
+        filter: brightness(1);
+    }
+}
+
+@keyframes drop {
+    from {
+        
+        transform: scale(1, 1);
+    }
+    to {
+        
+        transform: scale(1.1, 1);
+    }
+}
+@keyframes sizeup {
+    from{scale: 1;}
+    to{scale: 1.1;}
+}
+
+@keyframes sizedown {
+    from{scale: 1.1;}
+    to{scale: 1;}
+}
+
+@keyframes spin{
+    0%{transform: rotateZ(0deg);}
+    100%{transform: rotateZ(360deg);}
+}
+
+@keyframes slidein{
+    from{translate: 100px; scale: 0;}
+    to{translate: 0px; scale: 1;}
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5em;
+    color: white;
+    margin: 0;
+}
+
+button{
+    background: black;
+    color: white;
+    border-radius: 0;
+    border-style: none;
+    height: 100%;
+    min-width: 6em;
+    width: 15vw;
+    font-size: 2vh;
+    border: solid;
+    border-width: 0em;
+    border-color: white;
+}
+
+button:hover{
+    animation: drop 1s linear infinite alternate;
+    border-width: 0.1em;
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: center;
+    background: rgb(19, 19, 19);
+    height: 6vh;
+    width: 100%;
+}
+
+.content{
+    height: 100%;
+    width: 80em;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.expirience{
+    /* flex-wrap: wrap; */
+    height: 100%;
+    width: 50rem;
+    color: white;
+    background: rgb(19, 19, 19);
+    border-left: .1em solid rgb(125, 125, 125);
+}
+
+.charachter{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    background-color: rgb(19, 19, 19);
+    width: 30rem;
+    height: 100%;
+    border-left: .1em solid rgb(125, 125, 125);
+    border-right: .1em solid rgb(125, 125, 125);
+}
+
+.myname{
+    text-align: center;
+    background: rgb(19, 19, 19);
+    width: 100%;
+}
+
+.myimage{
+   
+    width: 100%;
+
+    color: white;
+    animation: spin linear 10s infinite;
+}
+
+
+.myskills{
+    padding: 3%;
+    background: rgb(19, 19, 19);
+    
+}
+
+.skill{
+    background: black;
+    border-radius: 1em;
+    color: white;
+    padding: 4%;
+    animation: slidein 1s forwards;
+    
+    /* animation: 3s infinite alternate slidein;
+    animation: drop 3s ease-in-out infinite; */
+}
+
+.map{
+    height: auto;
+    display: flex;
+    position: fixed;
+    vertical-align: middle;
+    align-items: center;
+    justify-items: middle;
+    align-content: middle;
+    max-width: 90vw;
+}
+
+.mapback{
+
+    width: 100%;
+}
+
+.mapmarker{
+    position: absolute;
+    background-color: rgba(35, 150, 37, 0.378);
+    border: solid;
+    border-color: white;
+    border-width: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.maplegend{
+    margin: 0;
+    position: fixed;
+    bottom: 0.5%;
+    right: 0.5%;
+    height: 20em;
+    width: 10em;
+    background-color: rgba(0, 0, 0, 0.551);
+    border: solid .1em rgb(125, 125, 125);
+}
+
+.mapmodal{
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.721);
+    vertical-align: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    text-align: left;
+    border-left: .1em solid rgb(125, 125, 125);
+    border-right: .1em solid rgb(125, 125, 125);
+}
+
+.description{
+    width: 100%;
+    height: 100%;
+    align-items: left;
+    margin: 3ch;
+}
+
+.closemodal{
+    position: fixed;
+    bottom: 0px;
+    height: 6vh;
+}
+
+.inventorycontent{
+    height: 100%;
+    width: 80em;
+    max-width: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    vertical-align: bottom;
+    align-self: center;
+    justify-self: center;
+    border-left: .1em solid rgb(125, 125, 125);
+    border-right: .1em solid rgb(125, 125, 125);
+}
+
+.grid{
+    background: rgb(19, 19, 19);
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.slot{
+    display: flex;
+    width: 7em;
+    height: 7em;
+    color: white;
+    border: solid .1em white;
+    border-radius: 0.5em;
+    margin: .5em;
+    animation: sizedown .5s forwards;
+}
+
+.slot:hover{
+    animation: sizeup .5s forwards;
+}
+
+.inventoryinfo{
+    width: 100%;
+    height: 100%;
+    background: rgb(19, 19, 19);
+    border-top: .1em solid rgb(125, 125, 125);
+}

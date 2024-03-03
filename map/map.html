@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map</title>
+        <link rel="stylesheet" href="../style.css">
+        <meta name="viewport" content="width=device-width">
+        
+    </head>
+
+    <body>
+
+        <div class="header">
+            <button>Map</button>
+            <button onclick="location.href = '../index.html';">Charachter</button>
+            <button onclick="location.href = '../inventory/inventory.html';">Inventory</button>
+        </div>
+
+        <div class="content">
+            <div class="map">
+                <img class="mapback" src="../images/mapvector.svg">
+                <div onclick="showModal('ss')" class="mapmarker" style="top: 20%; left: 40%;"></div>
+                <div class="mapmarker" style="top: 50%; left: 60%;"></div>
+            </div>
+
+            <div class="maplegend">
+                <p>Legend</p>
+            </div>
+
+            <div class="mapmodal">
+                <div class="description">
+                    <h1>Project Name</h1>
+
+                    <p>Content here</p>
+                </div>
+                <button class="closemodal" onclick=hideModal()>CLOSE</button>
+            </div>
+
+            
+        </div>
+    </body>
+
+    <script src="map.js"></script>
+</html> 
