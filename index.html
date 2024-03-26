@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="/images/site_ico.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        </style>
     </head>
 
     <body class="">
@@ -12,8 +15,9 @@
         
         <div class="header">
             <div class="contacts">
-                <a href="mailto:kirillhod@gmail.com">
+                <a class="contact" href="mailto:kirillhod@gmail.com">
                     <img class="contactimage" src="../images/mail_icon.svg">
+                    <p class="email">kirillhod@gmail.com</p>
                 </a>
                     
                 <a href="https://github.com/WcvgImMeister">
@@ -21,28 +25,38 @@
                 </a>
 
             </div>
-            <button onclick="location.href = 'map/map.html';">Map</button>
-            <button>Charachter</button>
-            <button onclick="location.href = 'inventory/inventory.html';">Inventory</button>
+
+            <div class="pages">
+                <button onclick="location.href = 'map/map.html';">MAP</button>
+                <button>CHARACHTER</button>
+                <button onclick="location.href = 'inventory/inventory.html';">INVENTORY</button>
+            </div>
+            
         </div>
 
         <div class="content">
             <div class="expirience">
-                <p>daddadadad</p>
+                <h1>Hello!</h1>
+                
+                <p>It's me</p>
             </div>
 
             <div class="charachter">
                 <div class="myname">
-                    <h1>Кирилл</h1>
+                    <h1>Kirill Khodyrev</h1>
                 </div>
     
-                <img class="myimage" src="../images/idea.png">
+                <!-- <img class="myimage" src="../images/idea.png"> -->
+                <video class="myimage" autoplay loop muted>
+                    <source src="images/loading.mov" type="video/mp4">
+                </video>
                 
         
                 <div class="myskills">
 
                     <p class="skill">Unity C# (HDRP & URP)</p>
                     <p class="skill">Rider, Visual Studio, VS Code</p>
+                    <p class="skill">Blender 3D</p>
                     <p class="skill">Microsoft Office & Google Docs</p>
                     <p class="skill">Excel & Spreadsheets</p>
                     

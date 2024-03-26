@@ -2,7 +2,7 @@ let view = document.getElementsByClassName("inventoryinfo")[0];
 let reader = new FileReader();
 
 function UpdateView(path){
-    var fileUrl = path; // Replace 'file.txt' with the path to your text file
+    var fileUrl ='items/' + path + '.html';
     var xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = function() {
@@ -10,7 +10,7 @@ function UpdateView(path){
             if (xhr.status === 200) {
                 view.innerHTML = xhr.responseText;
                 console.log(view.innerText);
-                // You can process the file content here
+                
             } else {
                 console.error('Failed to read the file');
             }

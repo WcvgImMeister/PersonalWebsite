@@ -12,8 +12,9 @@
 
         <div class="header">
             <div class="contacts">
-                <a href="mailto:kirillhod@gmail.com">
+                <a class="contact" href="mailto:kirillhod@gmail.com">
                     <img class="contactimage" src="../images/mail_icon.svg">
+                    <p class="email">kirillhod@gmail.com</p>
                 </a>
                     
                 <a href="https://github.com/WcvgImMeister">
@@ -21,43 +22,47 @@
                 </a>
 
             </div>
-            <button>Map</button>
-            <button onclick="location.href = '../index.html';">Charachter</button>
-            <button onclick="location.href = '../inventory/inventory.html';">Inventory</button>
+            <div class="pages">
+                <button>MAP</button>
+                <button onclick="location.href = '../index.html';">CHARACHTER</button>
+                <button onclick="location.href = '../inventory/inventory.html';">INVENTORY</button>
+            </div>
         </div>
 
         <div class="content">
             <div class="map">
                 <img class="mapback" src="../images/map.svg">
-                <div onclick="showModal('ss')" class="mapmarker" style="top: 60%; left: 40%;">
+
+                <div onclick="showModal('bio_matter')" class="mapmarker" style="top: 60%; left: 40%;">
                     <div class="markerinfo">
                         <p>BioMatter Game</p>
                     </div>
                 </div>
                 
-                <div class="mapmarker" style="top: 50%; left: 60%;">
+                <div onclick="showModal('constructor_ar')" class="mapmarker" style="top: 50%; left: 60%;">
                     <div class="markerinfo">
                         <p>ConstructorAR</p>
                     </div>
                 </div>
 
-                <div class="mapmarker" style="top: 20%; left: 50%;">
+                <div onclick="showModal('delivery')" class="mapmarker" style="top: 20%; left: 50%;">
                     <div class="markerinfo">
                         <p>Space Delivery Game</p>
                     </div>
                 </div>
 
-                <div class="mapmarker" style="top: 90%; left: 10%;">
+                <div onclick="showModal('calculator')" class="mapmarker" style="top: 90%; left: 10%;">
                     <div class="markerinfo">
                         <p>Android Calculator App</p>
                     </div>
                 </div>
 
-                <div class="mapmarker" style="top: 50%; left: 20%;">
+                <div onclick="showModal('space_adventure')" class="mapmarker" style="top: 50%; left: 20%;">
                     <div class="markerinfo">
                         <p>Spaceship Adventure Mobile Game</p>
                     </div>
                 </div>
+
             </div>
 
             <div class="maplegend">
