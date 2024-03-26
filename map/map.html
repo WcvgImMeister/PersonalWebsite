@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Map</title>
+        <title>Projects</title>
         <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="image/x-icon" href="../images/map_icon.svg">
         <meta name="viewport" content="width=device-width">
         
     </head>
@@ -10,6 +11,16 @@
     <body>
 
         <div class="header">
+            <div class="contacts">
+                <a href="mailto:kirillhod@gmail.com">
+                    <img class="contactimage" src="../images/mail_icon.svg">
+                </a>
+                    
+                <a href="https://github.com/WcvgImMeister">
+                    <img class="contactimage" src="../images/github_logo.svg">
+                </a>
+
+            </div>
             <button>Map</button>
             <button onclick="location.href = '../index.html';">Charachter</button>
             <button onclick="location.href = '../inventory/inventory.html';">Inventory</button>
@@ -17,18 +28,41 @@
 
         <div class="content">
             <div class="map">
-                <img class="mapback" src="../images/mapvector.svg">
-                <div onclick="showModal('ss')" class="mapmarker" style="top: 20%; left: 40%;">
+                <img class="mapback" src="../images/map.svg">
+                <div onclick="showModal('ss')" class="mapmarker" style="top: 60%; left: 40%;">
                     <div class="markerinfo">
-                        <p>Some Project</p>
+                        <p>BioMatter Game</p>
                     </div>
                 </div>
                 
-                <div class="mapmarker" style="top: 50%; left: 60%;"></div>
+                <div class="mapmarker" style="top: 50%; left: 60%;">
+                    <div class="markerinfo">
+                        <p>ConstructorAR</p>
+                    </div>
+                </div>
+
+                <div class="mapmarker" style="top: 20%; left: 50%;">
+                    <div class="markerinfo">
+                        <p>Space Delivery Game</p>
+                    </div>
+                </div>
+
+                <div class="mapmarker" style="top: 90%; left: 10%;">
+                    <div class="markerinfo">
+                        <p>Android Calculator App</p>
+                    </div>
+                </div>
+
+                <div class="mapmarker" style="top: 50%; left: 20%;">
+                    <div class="markerinfo">
+                        <p>Spaceship Adventure Mobile Game</p>
+                    </div>
+                </div>
             </div>
 
             <div class="maplegend">
                 <p>Legend</p>
+                <p>Disover galactic map of projects</p>
             </div>
             
             <div class="mapmodal">
