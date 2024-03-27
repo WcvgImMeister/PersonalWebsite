@@ -15,6 +15,7 @@ body {
     background-color: black;
     background-size: cover;
     animation: appear forwards 1s;
+    overflow: hidden;
 }
 
 h1 {
@@ -42,6 +43,7 @@ p {
 a {
     color: orange;
     text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a:visited {
@@ -375,12 +377,12 @@ button:active {
     position: fixed;
     bottom: 1em;
     right: 1em;
-    height: 20em;
+    /* height: 10em; */
     width: 10em;
     max-height: 20vh;
-    min-height: 20vh;
+    min-height: 3em;
     max-width: 20vw;
-    min-width: 10vw;
+    min-width: 3em;
     background-color: rgba(0, 0, 0, 0.551);
     border: solid .1em rgb(125, 125, 125);
     backdrop-filter: blur(10px);
@@ -406,8 +408,14 @@ button:active {
 .description {
     /* display: flex; */
     display: flex;
+    overflow-y: auto;
+    scrollbar-color: rgb(125, 125, 125) rgb(19, 19, 19);
+    
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
     flex-direction: column;
     width: 100%;
+    height: 94vh;
     padding: 2em;
     box-sizing: border-box;
     justify-items: center;
@@ -434,6 +442,14 @@ button:active {
     justify-self: center;
     border-left: 1px solid rgb(125, 125, 125);
     border-right: 1px solid rgb(125, 125, 125);
+}
+
+.invtitle{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 1em;
+    background: rgb(19, 19, 19);
 }
 
 .grid {
