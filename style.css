@@ -1,11 +1,12 @@
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
     align-items: baseline;
-    
+
     margin: 0;
     padding: 0;
     font-size: 1em;
@@ -16,7 +17,7 @@ html, body {
     animation: appear forwards 1s;
 }
 
-h1{
+h1 {
     font-family: "Roboto Mono", monospace;
     font-style: normal;
     font-size: min(2em, 6vw);
@@ -24,76 +25,131 @@ h1{
     margin: 0;
 }
 
-p{
+.contentimg {
+    
+    max-height: 60vh; 
+    max-width:100%;
+    align-self: center;
+}
+
+p {
     font-family: 'Roboto Mono', monospace;
     font-size: min(3vw, 1em);
     text-align: left;
     color: rgb(210, 210, 210);
 }
 
-a{
+a {
     color: orange;
     text-decoration: none;
 }
-a:visited{
-    color:orange ;
+
+a:visited {
+    color: orange;
     text-decoration: none;
 }
 
-li{
+li {
     color: rgb(210, 210, 210);
     font-family: "Roboto Mono", monospace;
     font-size: min(3vw, 1em);
 }
 
 @keyframes appear {
-    from{filter: brightness(0);}
-    to{filter: brightness(1);}
+    from {
+        filter: brightness(0);
+    }
+
+    to {
+        filter: brightness(1);
+    }
 }
 
 @keyframes drop {
-    from {transform: scale(1, 1);}
-    to { transform: scale(1.1, 1);}
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.1, 1);
+    }
 }
 
 @keyframes sizeup {
-    from{scale: 1;}
-    to{scale: 1.1;}
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 1.1;
+    }
 }
 
 @keyframes sizeup2 {
-    from{scale: 1;}
-    to{scale: 1.5;}
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 1.5;
+    }
 }
 
 @keyframes sizedown {
-    from{scale: 1.1;}
-    to{scale: 1;}
+    from {
+        scale: 1.1;
+    }
+
+    to {
+        scale: 1;
+    }
 }
 
 @keyframes sizedown2 {
-    from{scale: 1.5;}
-    to{scale: 1;}
+    from {
+        scale: 1.5;
+    }
+
+    to {
+        scale: 1;
+    }
 }
 
-@keyframes spin{
-    0%{transform: rotateZ(0deg);}
-    100%{transform: rotateZ(360deg);}
+@keyframes spin {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
 }
 
-@keyframes slidein{
-    from{translate: 100px; scale: 0;}
-    to{translate: 0px; scale: 1;}
+@keyframes slidein {
+    from {
+        translate: 100px;
+        scale: 0;
+    }
+
+    to {
+        translate: 0px;
+        scale: 1;
+    }
 }
 
-@keyframes borderin{
-    from{border-top: 0px solid;}
-    to{border-top: 10px solid rgb(97, 181, 63);}
+@keyframes borderin {
+    from {
+        border-top: 0px solid;
+    }
+
+    to {
+        border-top: 10px solid rgb(97, 181, 63);
+    }
 }
 
 
 
-button{
+button {
     /* background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(34,34,34,1) 18%, rgba(34,34,34,1) 79%, rgba(0,0,0,0) 100%); */
     background-color: rgba(255, 255, 255, 0);
     color: white;
@@ -111,7 +167,7 @@ button{
     box-sizing: border-box;
 }
 
-button:hover{
+button:hover {
     animation: borderin 0.3s ease-out forwards;
     /* animation: drop 1s linear infinite alternate; */
     /* border-width: 0.1em; */
@@ -119,11 +175,11 @@ button:hover{
     background: rgb(52, 52, 52);
 }
 
-button:active{
+button:active {
     background-color: rgb(86, 86, 86);
 }
 
-.header{
+.header {
     /* display: flex; */
     flex-shrink: 0;
     flex-direction: row;
@@ -135,16 +191,15 @@ button:active{
     box-sizing: border-box;
 }
 
-.pages{
+.pages {
     display: flex;
     height: 100%;
-;
     justify-items: center;
     justify-content: center;
-    
+
 }
 
-.contacts{
+.contacts {
     height: 5vh;
     margin-top: 1.5vh;
     float: left;
@@ -154,38 +209,49 @@ button:active{
     margin-left: 1em;
 }
 
-.contactimage{
+.contactimage {
     height: 60%;
-    
+
 }
 
-.contactimage:hover{
+.contactimage:hover {
     filter: drop-shadow(0 0 0.5em rgb(97, 181, 63));
 }
 
-.contact:hover > .email{
+.contact:hover>.email {
     display: block;
 }
 
-.email{
+.email {
     display: none;
-    position:fixed;
+    position: fixed;
 }
 
-.content{
+.content {
     height: 100%;
     width: 80em;
     max-width: 100%;
-    display: flex;
-    
+    display: inline-block;
+
     justify-content: center;
-    align-items: center;
     align-self: center;
     justify-self: center;
     box-sizing: border-box;
 }
 
-.expirience{
+.charcontent {
+    height: 100%;
+    width: 80em;
+    max-width: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    box-sizing: border-box;
+}
+
+.expirience {
     height: 100%;
     width: 50rem;
     color: white;
@@ -195,7 +261,7 @@ button:active{
     padding: 2em;
 }
 
-.charachter{
+.charachter {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -209,49 +275,52 @@ button:active{
     padding-top: 2em;
 }
 
-.myname{
+.myname {
     text-align: center;
     background: rgb(19, 19, 19);
     width: 100%;
 }
 
-.myimage{
+.myimage {
     width: 70%;
     align-self: center;
     color: white;
     animation: spin linear 10s infinite;
 }
 
-.myskills{
+.myskills {
     padding: 3%;
     background: rgb(19, 19, 19);
-    
+
 }
 
-.skill{
+.skill {
     background: black;
     border-radius: 7px;
-    
+
     padding: 4%;
     animation: slidein 1s forwards;
 }
 
-.map{
+.map {
     height: auto;
     display: flex;
     position: fixed;
+    margin-top: 10vh;
     vertical-align: middle;
     align-items: center;
     justify-content: center;
+    justify-self: center;
     align-content: center;
+    align-self: center;
     max-height: 90vw;
 }
 
-.mapback{
+.mapback {
     width: 90%;
 }
 
-.mapmarker{
+.mapmarker {
     position: absolute;
     background-color: rgba(35, 150, 37, 0.378);
     border: solid;
@@ -269,16 +338,16 @@ button:active{
     animation: sizedown2 .5s forwards;
 }
 
-.mapmarker:hover{
-    
+.mapmarker:hover {
+
     animation: sizeup2 .5s forwards;
 }
 
-.mapmarker:hover > .markerinfo{
+.mapmarker:hover>.markerinfo {
     display: inline-flex;
 }
 
-.markerinfo{
+.markerinfo {
     display: none;
     flex-direction: row;
     translate: 0 -60px;
@@ -291,14 +360,14 @@ button:active{
 
     color: white;
     width: auto;
-    
+
     border: solid 1px white;
     border-radius: 0.5em;
     background-color: rgba(0, 0, 0, 0.551);
     backdrop-filter: blur(10px);
 }
 
-.maplegend{
+.maplegend {
     animation: slidein 1s forwards;
     margin: 0;
     padding-left: 1em;
@@ -317,37 +386,43 @@ button:active{
     backdrop-filter: blur(10px);
 }
 
-.mapmodal{
+.mapmodal {
     display: none;
+    box-sizing: border-box;
     flex-direction: column;
     backdrop-filter: blur(10px);
+    max-width: 100%;
     width: 100%;
-    height: 100%;
+    min-height: 94vh;
     background-color: rgba(0, 0, 0, 0.721);
-    vertical-align: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    text-align: left;
+    /* vertical-align: center; */
+    align-items: start;
+    justify-items: start;
+    align-content: start;
     border-left: 1px solid rgb(125, 125, 125);
     border-right: 1px solid rgb(125, 125, 125);
 }
 
-.description{
+.description {
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
-    align-items: left;
     padding: 2em;
     box-sizing: border-box;
+    justify-items: center;
 }
 
-.closemodal{
-    position: fixed;
-    bottom: 0px;
-    height: 6vh;
+.closemodal {
+    position: absolute;
+
+    align-self: center;
+    bottom: 1%;
+    height: 7vw;
+    max-height: 6vh;
 }
 
-.inventorycontent{
+.inventorycontent {
     height: 100%;
     width: 80em;
     max-width: 100%;
@@ -361,7 +436,7 @@ button:active{
     border-right: 1px solid rgb(125, 125, 125);
 }
 
-.grid{
+.grid {
     background: rgb(19, 19, 19);
     display: flex;
     flex-flow: wrap;
@@ -373,16 +448,17 @@ button:active{
     padding: 1em;
 }
 
-.slot{
+.slot {
     display: flex;
-    
+
     width: 6vw;
     height: 6vw;
     min-height: 3em;
     min-width: 3em;
-   
+
     color: white;
-    border: solid .1em rgb(125, 125, 125);;
+    border: solid .1em rgb(125, 125, 125);
+    ;
     border-radius: 0.2em;
 
     margin: .4vw;
@@ -392,12 +468,12 @@ button:active{
     align-content: center;
 }
 
-.slot:hover{
+.slot:hover {
     animation: sizeup .5s forwards;
     border-color: white;
 }
 
-.invicon{
+.invicon {
     width: 90%;
     max-height: 90%;
     display: flex;
@@ -407,11 +483,11 @@ button:active{
     filter: brightness(0.9);
 }
 
-.invicon:hover{
+.invicon:hover {
     filter: brightness(1);
 }
 
-.inventoryinfo{
+.inventoryinfo {
     width: 100%;
     height: 100%;
     color: white;
@@ -419,7 +495,7 @@ button:active{
     border-top: 1px solid rgb(125, 125, 125);
     padding: 2em;
     box-sizing: border-box;
-    
+
 }
 
 /* If the cube is directly inside the container:
