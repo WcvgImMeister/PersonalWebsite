@@ -426,7 +426,7 @@ button:active {
 }
 
 .closemodal {
-    position: fixed;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.647);
     backdrop-filter: blur(15px);
     align-self: center;
@@ -434,6 +434,7 @@ button:active {
     height: 7vw;
     min-width: 10em;
     max-height: 6vh;
+    min-height: 2em;
 }
 
 .inventorycontent {
