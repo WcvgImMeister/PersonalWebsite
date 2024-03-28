@@ -10,7 +10,6 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1em;
-    /* background: no-repeat center/80% url(images/space.jpg); */
     background: no-repeat center/80% url(images/space_dark.png);
     background-color: black;
     background-size: cover;
@@ -172,8 +171,6 @@ button {
 
 button:hover {
     animation: borderin 0.3s ease-out forwards;
-    /* animation: drop 1s linear infinite alternate; */
-    /* border-width: 0.1em; */
     cursor: pointer;
     background: rgb(52, 52, 52);
 }
@@ -183,7 +180,6 @@ button:active {
 }
 
 .header {
-    /* display: flex; */
     flex-shrink: 0;
     flex-direction: row;
     justify-content: center;
@@ -342,12 +338,14 @@ button:active {
     height: auto;
     height: 0;
     padding-bottom: min(5%, 5vw);
-
     align-items: center;
-
     border-radius: 50%;
     cursor: pointer;
     animation: sizedown2 .5s forwards;
+
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 .mapmarker:hover {
@@ -376,6 +374,10 @@ button:active {
     border-radius: 0.5em;
     background-color: rgba(0, 0, 0, 0.551);
     backdrop-filter: blur(10px);
+
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 .maplegend {
@@ -426,7 +428,8 @@ button:active {
 }
 
 .closemodal {
-    position: absolute;
+    /* position: absolute; */
+    flex-shrink: 0;
     background-color: rgba(0, 0, 0, 0.647);
     backdrop-filter: blur(15px);
     align-self: center;
@@ -482,7 +485,7 @@ button:active {
 
     color: white;
     border: solid .1em rgb(125, 125, 125);
-    ;
+    
     border-radius: 0.2em;
 
     margin: .4vw;
