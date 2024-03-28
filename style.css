@@ -16,6 +16,7 @@ body {
     background-size: cover;
     animation: appear forwards 1s;
     overflow: hidden;
+
 }
 
 h1 {
@@ -188,6 +189,7 @@ button:active {
     justify-content: center;
     background: rgb(34, 34, 34);
     height: 6vh;
+    min-height: 3em;
     width: 100%;
     border-bottom: solid 1px rgb(125, 125, 125);
     box-sizing: border-box;
@@ -203,17 +205,19 @@ button:active {
 
 .contacts {
     height: 5vh;
+    min-height: 3em;
     margin-top: 1.5vh;
     float: left;
     position: fixed;
     display: flex;
+    justify-self: center;
     gap: 10px;
     margin-left: 1em;
 }
 
 .contactimage {
     height: 60%;
-
+    justify-self: center;
 }
 
 .contactimage:hover {
@@ -246,15 +250,17 @@ button:active {
     width: 80em;
     max-width: 100%;
     display: flex;
-
+    overflow: auto;
     justify-content: center;
     align-self: center;
     justify-self: center;
     box-sizing: border-box;
+    background: rgb(19, 19, 19);
 }
 
 .expirience {
-    height: 100%;
+    /* display: flex; */
+    height: auto;
     width: 50rem;
     color: white;
     background: rgb(19, 19, 19);
@@ -265,12 +271,13 @@ button:active {
 
 .charachter {
     display: flex;
+    
     flex-direction: column;
     justify-content: start;
     align-content: center;
     background-color: rgb(19, 19, 19);
     width: 30rem;
-    height: 100%;
+    height: auto;
     border-left: 1px solid rgb(125, 125, 125);
     border-right: 1px solid rgb(125, 125, 125);
     box-sizing: border-box;
@@ -299,7 +306,7 @@ button:active {
 .skill {
     background: black;
     border-radius: 7px;
-
+    height: auto;
     padding: 4%;
     animation: slidein 1s forwards;
 }
@@ -420,7 +427,7 @@ button:active {
     background-color: rgba(0, 0, 0, 0.647);
     backdrop-filter: blur(15px);
     align-self: center;
-    bottom: 0%;
+    bottom: 0vh;
     height: 7vw;
     min-width: 10em;
     max-height: 6vh;
