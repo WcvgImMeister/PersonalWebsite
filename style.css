@@ -312,6 +312,8 @@ button:active {
     display: flex;
     position: fixed;
     margin-top: 10vh;
+    width: auto;
+    
     vertical-align: middle;
     align-items: center;
     justify-content: center;
@@ -406,7 +408,8 @@ button:active {
     backdrop-filter: blur(10px);
     max-width: 100%;
     width: 100%;
-    min-height: 94vh;
+    
+    height: 100%;
     background-color: rgba(0,0,0,.721);
     align-items: flex-start;
     justify-content: flex-start;
