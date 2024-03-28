@@ -341,7 +341,6 @@ button:active {
 }
 
 .mapmarker:hover {
-
     animation: sizeup2 .5s forwards;
 }
 
@@ -396,13 +395,10 @@ button:active {
     max-width: 100%;
     width: 100%;
     min-height: 94vh;
-    background-color: rgba(0, 0, 0, 0.721);
-    /* vertical-align: center; */
-    align-items: start;
-    justify-items: start;
-    align-content: start;
-    border-left: 1px solid rgb(125, 125, 125);
-    border-right: 1px solid rgb(125, 125, 125);
+    background-color: rgba(0,0,0,.721);
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px solid rgb(125,125,125);
 }
 
 .description {
@@ -423,10 +419,12 @@ button:active {
 
 .closemodal {
     position: absolute;
-
+    background-color: rgba(0, 0, 0, 0.647);
+    backdrop-filter: blur(15px);
     align-self: center;
-    bottom: 1%;
+    bottom: 0%;
     height: 7vw;
+    min-width: 10em;
     max-height: 6vh;
 }
 
