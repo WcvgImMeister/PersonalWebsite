@@ -8,7 +8,7 @@ let reader = new FileReader();
 // });
 
 function hideModal(context){
-    
+    description.innerHTML = '';
     modal.style.display = "none";
 }
 
