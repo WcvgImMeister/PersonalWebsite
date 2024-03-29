@@ -458,17 +458,18 @@ button:active {
     justify-items: center;
 }
 
-.closemodal {
-    /* position: absolute; */
+.closemodal{
+    color: brown;
+    position: fixed;
     flex-shrink: 0;
-    background-color: rgba(0, 0, 0, 0.647);
-    backdrop-filter: blur(15px);
-    align-self: center;
-    bottom: 0vh;
-    height: 7vw;
-    min-width: 10em;
-    max-height: 6vh;
-    min-height: 2em;
+    align-self: right;
+    right: 1em;
+    top: 1em;
+}
+
+.closemodal:hover{
+    color: red;
+    cursor: pointer;
 }
 
 .inventorycontent {
@@ -515,8 +516,8 @@ button:active {
 
     width: 6vw;
     height: 6vw;
-    min-height: 3em;
-    min-width: 3em;
+    min-height: 4em;
+    min-width: 4em;
 
     color: white;
     border: solid .1em rgb(125, 125, 125);
