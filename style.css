@@ -60,6 +60,18 @@ a {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.link::before{
+    display: inline-flex;
+    content: '';
+    background-image: url('images/link.svg');
+    background-size: 1em 0.7em;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 1em ;
+    width: 1em ;
+    filter: invert();
+}
+
 a:visited {
     color: orange;
     text-decoration: none;
@@ -353,23 +365,21 @@ button:active {
 
 }
 
+
 .mapmarker {
     position: absolute;
     background-color: rgba(81, 239, 42, 0.378);
-    border: solid;
-    border-color: rgb(194, 194, 194);
-    border-width: 2px;
-    width: min(5%, 5vw);
-    height: auto;
-    height: 0;
-    padding-bottom: min(5%, 5vw);
-    align-items: center;
+    border: 2px solid rgb(194, 194, 194);
     border-radius: 50%;
     cursor: pointer;
-    animation: sizedown2 .5s forwards;
+    animation: sizedown2 0.5s forwards;
 
-    -webkit-user-select: none; 
-    -ms-user-select: none; 
+    height: 0;
+    padding-bottom: min(5%, 5vw);
+    width: min(5%, 5vw);
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
 }
