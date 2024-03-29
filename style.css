@@ -348,9 +348,9 @@ button:active {
 
 .mapmarker {
     position: absolute;
-    background-color: rgba(35, 150, 37, 0.378);
+    background-color: rgba(81, 239, 42, 0.378);
     border: solid;
-    border-color: white;
+    border-color: rgb(194, 194, 194);
     border-width: 2px;
     width: min(5%, 5vw);
     height: auto;
@@ -364,6 +364,10 @@ button:active {
     -webkit-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
+}
+
+.sideproject{
+    background-color: rgba(35, 115, 150, 0.378);
 }
 
 .mapmarker:hover {
@@ -415,6 +419,14 @@ button:active {
     background-color: rgba(0, 0, 0, 0.551);
     border: solid .1em rgb(125, 125, 125);
     backdrop-filter: blur(10px);
+}
+
+.mapbutton:enabled::after{
+    content: 'MAP';
+}
+
+.mapbutton:hover::after{
+    content: 'PORTFOLIO';
 }
 
 .mapmodal {
@@ -472,6 +484,10 @@ button:active {
     border-left: 1px solid rgb(125, 125, 125);
     border-right: 1px solid rgb(125, 125, 125);
     overflow: auto;
+    overflow-y: auto;
+    scrollbar-color: rgb(125, 125, 125) rgb(19, 19, 19);
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 
 .invtitle{
