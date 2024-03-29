@@ -26,6 +26,14 @@ h1 {
     margin: 0;
 }
 
+h2{
+    font-family: "Roboto Mono", monospace;
+    font-style: normal;
+    font-size: min(1.2em, 3.5vw);
+    color: white;
+    margin: 0;
+}
+
 .contentimg {
     
     max-height: 60vh; 
