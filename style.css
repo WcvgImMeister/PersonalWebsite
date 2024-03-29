@@ -37,7 +37,7 @@ h2{
 .contentimg {
     
     max-height: 60vh; 
-    max-width:100%;
+    max-width:95%;
     align-self: center;
 }
 
@@ -408,14 +408,14 @@ button:active {
     padding-left: 1em;
     padding-right: 1em;
     position: fixed;
-    bottom: 1em;
-    right: 1em;
-    /* height: 10em; */
-    width: 10em;
+    top: clamp(7vh, 90vw, 91vh); ;
+    
+    right: 1vh;
+    width: 20em;
     max-height: 20vh;
-    min-height: 3em;
-    max-width: 20vw;
-    min-width: 3em;
+    min-height: 3vh;
+    max-width: 80vw;
+    
     background-color: rgba(0, 0, 0, 0.551);
     border: solid .1em rgb(125, 125, 125);
     backdrop-filter: blur(10px);
@@ -464,7 +464,7 @@ button:active {
     flex-shrink: 0;
     align-self: right;
     right: 1em;
-    top: 1em;
+    top: 0.5em;
 }
 
 .closemodal:hover{
