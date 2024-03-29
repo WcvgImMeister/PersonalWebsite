@@ -35,10 +35,16 @@ h2{
 }
 
 .contentimg {
-    
     max-height: 60vh; 
     max-width:95%;
     align-self: center;
+}
+
+img{
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 p {
@@ -343,7 +349,8 @@ button:active {
 .mapback {
     width: 90%;
     max-height: 90vh;
-    
+
+
 }
 
 .mapmarker {
@@ -364,6 +371,7 @@ button:active {
     -webkit-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
+    -webkit-user-drag: none;
 }
 
 .sideproject{
@@ -400,6 +408,7 @@ button:active {
     -webkit-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
+    -webkit-user-drag: none;
 }
 
 .maplegend {
@@ -513,22 +522,23 @@ button:active {
 
 .slot {
     display: flex;
-
     width: 6vw;
     height: 6vw;
     min-height: 4em;
     min-width: 4em;
-
     color: white;
     border: solid .1em rgb(125, 125, 125);
-    
     border-radius: 0.2em;
-
     margin: .4vw;
     animation: sizedown .5s forwards;
     box-sizing: border-box;
     justify-content: center;
     align-content: center;
+
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .slot:hover {
