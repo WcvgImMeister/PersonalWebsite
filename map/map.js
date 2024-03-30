@@ -3,10 +3,6 @@ let description = document.getElementsByClassName("description")[0];
 let markers = document.getElementsByClassName('mapmarker');
 let reader = new FileReader();
 
-// Array.from(markers).forEach(function(marker) {
-//     marker.addEventListener('click', showModal);
-// });
-
 function hideModal(context){
     description.innerHTML = '';
     modal.style.display = "none";
