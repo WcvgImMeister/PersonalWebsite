@@ -399,7 +399,7 @@ button:active {
 .markerinfo {
     display: none;
     flex-direction: row;
-    translate: 0 -60px;
+    translate: -30% -130%;
     position: relative;
     align-self: center;
     align-items: center;
@@ -409,6 +409,7 @@ button:active {
 
     color: white;
     width: auto;
+    height: min(2.2em, 4vw);
 
     border: solid 1px white;
     border-radius: 0.5em;
@@ -419,6 +420,10 @@ button:active {
     -ms-user-select: none; 
     user-select: none;
     -webkit-user-drag: none;
+}
+
+.markerinfo>p{
+    font-size: min(1.1em, 2vw);
 }
 
 .maplegend {
