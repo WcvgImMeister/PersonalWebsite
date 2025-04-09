@@ -25,9 +25,11 @@ function UpdateView(path){
             } else {
                 description.innerHTML = "[Not found]";
             }
+            initializeLanguage();
         }
     };
 
     xhr.open('GET', fileUrl, true);
     xhr.send();
+
 }

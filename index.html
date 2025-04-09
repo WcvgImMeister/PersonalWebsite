@@ -24,6 +24,7 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
         </style>
+        <script src="localization.js"></script>
     </head>
 
     <body class="">
@@ -42,9 +43,9 @@
             </div>
 
             <div class="pages">
-                <button class="mapbutton" onclick="location.href = 'map/map.html';"></button>
-                <button>CHARACHTER</button>
-                <button onclick="location.href = 'inventory/inventory.html';">INVENTORY</button>
+                <button data-i18n="header_map" class="mapbutton" onclick="location.href = 'map/map.html';">MAP</button>
+                <button data-i18n="header_charachter">CHARACHTER</button>
+                <button data-i18n="header_inventory" onclick="location.href = 'inventory/inventory.html';">INVENTORY</button>
             </div>
             
         </div>
@@ -52,9 +53,9 @@
         <div class="charcontent">
             <div class="expirience">
 
-                <h1 style="font-weight: bold;">Кирилл Ходырев</h1>
+                <h1 data-i18n="main_name" style="font-weight: bold;">Кирилл Ходырев</h1>
                 <br>
-                <h2 style="font-weight: bold;">Разработчик игр и любитель компьютерной графики</h2>
+                <h2 data-i18n="main_bio" style="font-weight: bold;">Разработчик игр и любитель компьютерной графики</h2>
                 <br>
                 <hr>
                 <br>
@@ -85,7 +86,7 @@
                 <p>Blender 3D</p>
                 <p>HTML, CSS, JS</p>
                 <br>
-                <h2>Достижения</h2>
+                <h2 data-i18n="main_achievements">Достижения</h2>
                 <p>WIP</p>
                 <br>
                 

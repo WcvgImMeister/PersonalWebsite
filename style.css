@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1em;
-    background: no-repeat center/80% url(images/space_dark.png);
+    background: no-repeat center/80% url(images/space.png);
     background-color: black;
     background-size: cover;
     animation: appear forwards 1s;
@@ -460,13 +460,13 @@ button:active {
     -webkit-backfrop-filter: blur(10px);
 }
 
-.mapbutton:enabled::after{
+/* .mapbutton:enabled::after{
     content: 'MAP';
 }
 
 .mapbutton:hover::after{
     content: 'PORTFOLIO';
-}
+} */
 
 .mapmodal {
     display: none;

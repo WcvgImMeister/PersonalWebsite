@@ -5,7 +5,10 @@
         <link rel="stylesheet" href="../style.css">
         <link rel="icon" type="image/x-icon" href="../images/map_icon.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        
+        <script src="../localization.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        </style>
     </head>
 
     <body>
@@ -23,9 +26,9 @@
 
             </div>
             <div class="pages">
-                <button class='mapbutton' onclick="hideModal()"></button>
-                <button onclick="location.href = '../index.html';">CHARACHTER</button>
-                <button onclick="location.href = '../inventory/inventory.html';">INVENTORY</button>
+                <button data-i18n="header_map" class='mapbutton' onclick="hideModal()">MAP</button>
+                <button data-i18n="header_charachter" onclick="location.href = '../index.html';">CHARACHTER</button>
+                <button data-i18n="header_inventory" onclick="location.href = '../inventory/inventory.html';">INVENTORY</button>
             </div>
         </div>
 
@@ -57,11 +60,11 @@
                     </div>
                 </div>
 
-                <div onclick="showModal('space_adventure')" class="mapmarker" style="top: 55%; left: 20%;">
+                <!-- <div onclick="showModal('space_adventure')" class="mapmarker" style="top: 55%; left: 20%;">
                     <div class="markerinfo">
                         <p>Spaceship Adventure Mobile Game</p>
                     </div>
-                </div>
+                </div> -->
 
                 <div onclick="showModal('batyr')" class="mapmarker" style="top: 20%; left: 30%;">
                     <div class="markerinfo">
@@ -73,7 +76,7 @@
 
             <div class="maplegend">
                 
-                <p>Исследуйте портфолио проектов, нажимая точки на карте</p>
+                <p data-i18n="map_tooltip">Исследуйте портфолио проектов, нажимая точки на карте</p>
             </div>
             
             <div class="mapmodal">

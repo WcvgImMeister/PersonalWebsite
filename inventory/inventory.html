@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/x-icon" href="../images/inventory_icon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
+    <script src="../localization.js"></script>
 </head>
 
 <body>
@@ -24,15 +28,15 @@
         </div>
 
         <div class="pages">
-            <button class="mapbutton" onclick="location.href = '../map/map.html';"></button>
-            <button onclick="location.href = '../index.html';">CHARACHTER</button>
-            <button>INVENTORY</button>
+            <button data-i18n="header_map" class="mapbutton" onclick="location.href = '../map/map.html';"></button>
+            <button data-i18n="header_charachter" onclick="location.href = '../index.html';">CHARACHTER</button>
+            <button data-i18n="header_inventory">INVENTORY</button>
         </div>
     </div>
 
     <div class="inventorycontent">
         <div class="invtitle">
-            <h2 style="padding-left: 1em; padding-right: 1em; text-align: center;">Некоторые инструменты, которые я использовал</h2>
+            <h2 data-i18n="inventory_header" style="padding-left: 1em; padding-right: 1em; text-align: center;">Некоторые инструменты, которые я использовал</h2>
         </div>
         <div class="grid">
             <div onclick="UpdateView('blender')" class="slot">
